@@ -1,10 +1,16 @@
 # SwiftUINavigator
 
+[![CI](https://github.com/javanli/SwiftUI-Navigator/actions/workflows/ci.yml/badge.svg)](https://github.com/javanli/SwiftUI-Navigator/actions/workflows/ci.yml)
+[![CI](https://img.shields.io/badge/SPM-supported-DE5C43.svg?style=flat)](https://swift.org/package-manager/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 为SwiftUI应用提供的一个声明式的路由和导航框架。
 
 注意： 这是一个实验性的框架，生产环境使用需要仔细评估。
 
 注意2: iOS16推出的`NavigationStack`比起`NavigationView`已经优化了非常多，如果你的应用只需要支持iOS16及以上，建议优先考虑`NavigationStack`
+
+## 特点
 
 优点：
 
