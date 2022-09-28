@@ -21,12 +21,11 @@ private struct RouterWrapper<Content : View> : View {
                 sceneState.content(defaultBuilder: {
                     AnyView(content())
                 })
-                .allowsHitTesting(index == navigationState.historyStack.count - 1)
                 .swipeableBack(isLastPage: index == navigationState.historyStack.count - 1)
                 .environmentObject(sceneState)
                 .environmentObject(sceneState.transitionState)
                 .environmentObject(navigationState.fakeState(index: index))
-                
+                .id(sceneState.identifier)
             }
         }
     }

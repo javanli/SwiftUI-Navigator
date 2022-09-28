@@ -28,6 +28,7 @@ public class NavigateSceneTransitionState : ObservableObject {
 public class NavigateSceneState : ObservableObject {
     public var sceneName : String
     public var properties : Dictionary<String,String>
+    public var identifier = UUID()
     public let navigationType : NavigationType
     public var transitionState : NavigateSceneTransitionState = NavigateSceneTransitionState()
     private var contentView : AnyView?

@@ -9,6 +9,7 @@ import SwiftUI
 
 public struct NavScene<Content : View> : View {
     @EnvironmentObject private var sceneState : NavigateSceneState
+    @Environment(\.colorScheme) var colorScheme
     private var name : String
     private var content : (Dictionary<String,String>) -> Content
     public init(
@@ -18,11 +19,22 @@ public struct NavScene<Content : View> : View {
         self.content = content
         self.name = name
     }
+    public init(
+            _ name: String = "*",
+            @ViewBuilder content: @escaping () -> Content
+    ) {
+        self.content = { properties in
+            content()
+        }
+        self.name = name
+    }
     public var body: some View {
         Group {
             if sceneState.sceneName == name || name == "*" {
                 ZStack {
-                    (sceneState.navigationType == .Push ? Color.black : Color.clear).frame(maxWidth:.infinity,maxHeight: .infinity)
+                    (sceneState.navigationType == .Push ? (colorScheme == .light ? Color.white : Color.black) : Color.clear)
+                        .frame(maxWidth:.infinity,maxHeight: .infinity)
+                        .edgesIgnoringSafeArea(.all)
                     content(sceneState.properties)
                 }
                 .sceneTransition()
