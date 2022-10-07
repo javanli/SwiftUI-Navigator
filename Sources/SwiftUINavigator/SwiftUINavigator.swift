@@ -32,6 +32,7 @@ public class NavigateSceneState : ObservableObject {
     public let navigationType : NavigationType
     public var transitionState : NavigateSceneTransitionState = NavigateSceneTransitionState()
     private var contentView : AnyView?
+    public var hasMatch : Bool = false
     
     
     public var canSwipeBack : Bool {
@@ -51,6 +52,10 @@ public class NavigateSceneState : ObservableObject {
             contentView = defaultBuilder()
         }
         return contentView!
+    }
+    public func resetHasMatch() -> NavigateSceneState {
+        hasMatch = false
+        return self
     }
 }
 

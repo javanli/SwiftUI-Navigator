@@ -8,7 +8,7 @@
 import SwiftUI
 import SwiftUINavigator
 
-let Tab1SceneName = "Tabs.tab1"
+let Tab1SceneName = "Tab1"
 struct Tab1: View {
     @EnvironmentObject private var navigator: Navigator
     var body: some View {

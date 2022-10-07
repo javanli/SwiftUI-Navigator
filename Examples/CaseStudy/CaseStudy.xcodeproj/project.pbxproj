@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D0AE87E328F0158D00FEA3D7 /* UnknownScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AE87E228F0158D00FEA3D7 /* UnknownScene.swift */; };
+		D0AE87E528F0261100FEA3D7 /* PopupScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AE87E428F0261100FEA3D7 /* PopupScene.swift */; };
 		D0FDE78F28E2EC4300FFF50C /* CaseStudyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FDE78E28E2EC4300FFF50C /* CaseStudyApp.swift */; };
 		D0FDE79328E2EC4500FFF50C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0FDE79228E2EC4500FFF50C /* Assets.xcassets */; };
 		D0FDE79628E2EC4500FFF50C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0FDE79528E2EC4500FFF50C /* Preview Assets.xcassets */; };
@@ -22,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D0AE87E228F0158D00FEA3D7 /* UnknownScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnknownScene.swift; sourceTree = "<group>"; };
+		D0AE87E428F0261100FEA3D7 /* PopupScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupScene.swift; sourceTree = "<group>"; };
 		D0FDE78B28E2EC4300FFF50C /* CaseStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CaseStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0FDE78E28E2EC4300FFF50C /* CaseStudyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseStudyApp.swift; sourceTree = "<group>"; };
 		D0FDE79228E2EC4500FFF50C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -102,6 +106,8 @@
 				D0FDE7AB28E2F0C600FFF50C /* HomeScene.swift */,
 				D0FDE7B528E3327500FFF50C /* NavActionScene.swift */,
 				D0FDE7B728E474C400FFF50C /* FadeScene.swift */,
+				D0AE87E228F0158D00FEA3D7 /* UnknownScene.swift */,
+				D0AE87E428F0261100FEA3D7 /* PopupScene.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -209,6 +215,8 @@
 				D0FDE7B628E3327500FFF50C /* NavActionScene.swift in Sources */,
 				D0FDE7B228E32D6100FFF50C /* NavBar.swift in Sources */,
 				D0FDE78F28E2EC4300FFF50C /* CaseStudyApp.swift in Sources */,
+				D0AE87E528F0261100FEA3D7 /* PopupScene.swift in Sources */,
+				D0AE87E328F0158D00FEA3D7 /* UnknownScene.swift in Sources */,
 				D0FDE7A628E2EFC200FFF50C /* Tab2.swift in Sources */,
 				D0FDE7AC28E2F0C600FFF50C /* HomeScene.swift in Sources */,
 				D0FDE7AA28E2EFF800FFF50C /* TabBar.swift in Sources */,

@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-let Tab2SceneName = "Tabs.tab2"
+let Tab2SceneName = "Tab2"
 struct Tab2: View {
     var body: some View {
         VStack {

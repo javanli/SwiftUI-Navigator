@@ -37,11 +37,9 @@ struct FadeScene: View {
     @EnvironmentObject private var navigator: Navigator
     var body: some View {
         VStack {
-            NavBar(title: "Tab1")
+            NavBar(title: "FadeTransition")
             Spacer()
-            Text("Hello, Tab1!").onTapGesture {
-                navigator.pop()
-            }
+            Text("FadeTransition")
             Spacer()
         }
     }

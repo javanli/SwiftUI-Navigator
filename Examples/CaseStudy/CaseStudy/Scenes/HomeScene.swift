@@ -11,9 +11,10 @@ import SwiftUINavigator
 let HomeSceneName = "home"
 
 let homeConfig = [
-    (text:"Try Navgation",sceneName:NavActionSceneName),
+    (text:"Common Navgation",sceneName:NavActionSceneName),
     (text:"CustomTabView",sceneName:Tab1SceneName),
-    (text:"CustomFadeTransition",sceneName:FadeSceneName)
+    (text:"CustomFadeTransition",sceneName:FadeSceneName),
+    (text:"Use \"*\" for 404",sceneName:"Unknown")
 ]
 struct HomeScene: View {
     @EnvironmentObject private var navigator: Navigator
@@ -22,16 +23,34 @@ struct HomeScene: View {
             // this is a custom navgation bar
             NavBar(title: "CaseStudy")
             List {
-                ForEach(0..<homeConfig.count,id: \.self) { index in
-                    Button(homeConfig[index].text) {
-                        navigator.push(homeConfig[index].sceneName)
-                    }
-                    .frame(height: 40)
-                    .listRowSeparator(.hidden)
+                Button("Common Navgation") {
+                    navigator.push(NavActionSceneName)
                 }
+                .frame(height: 40)
+                
+                Button("CustomTabView") {
+                    navigator.push(Tab1SceneName)
+                }
+                .frame(height: 40)
+                
+                Button("CustomFadeTransition") {
+                    navigator.push(FadeSceneName)
+                }
+                .frame(height: 40)
+                
+                Button("Popup") {
+                    navigator.present(PopupSceneName,animated: false)
+                }
+                .frame(height: 40)
+                
+                Button("Use * to handle scene not found") {
+                    navigator.push("Unknown")
+                }
+                .frame(height: 40)
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
                 .listStyle(.plain)
+                .listRowSeparator(.hidden)
                 .environment(\.defaultMinListRowHeight, 0)
                 .ignoresSafeArea()
         }

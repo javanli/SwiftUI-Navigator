@@ -32,6 +32,14 @@ struct CaseStudyApp: App {
                 NavScene(FadeSceneName) {
                     FadeScene()
                 }.fadeTransition()
+                
+                NavScene(PopupSceneName) {
+                    PopupScene()
+                }
+                
+                NavScene("*") {
+                    UnknownScene()
+                }
             }
         }
     }

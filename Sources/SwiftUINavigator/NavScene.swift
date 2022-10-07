@@ -29,8 +29,15 @@ public struct NavScene<Content : View> : View {
         self.name = name
     }
     public var body: some View {
-        Group {
+        var canShow = false
+        if !sceneState.hasMatch {
             if sceneState.sceneName == name || name == "*" {
+                canShow = true
+                sceneState.hasMatch = true
+            }
+        }
+        return Group {
+            if canShow {
                 ZStack {
                     (sceneState.navigationType == .Push ? (colorScheme == .light ? Color.white : Color.black) : Color.clear)
                         .frame(maxWidth:.infinity,maxHeight: .infinity)

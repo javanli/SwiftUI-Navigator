@@ -17,7 +17,7 @@ private struct RouterWrapper<Content : View> : View {
     public var body: some View {
         ZStack {
             ForEach(0..<navigationState.historyStack.count, id:\.self){ index in
-                let sceneState = navigationState.historyStack[index]
+                let sceneState = navigationState.historyStack[index].resetHasMatch()
                 sceneState.content(defaultBuilder: {
                     AnyView(content())
                 })
