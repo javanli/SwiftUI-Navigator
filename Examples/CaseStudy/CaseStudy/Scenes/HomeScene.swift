@@ -10,12 +10,6 @@ import SwiftUINavigator
 
 let HomeSceneName = "home"
 
-let homeConfig = [
-    (text:"Common Navgation",sceneName:NavActionSceneName),
-    (text:"CustomTabView",sceneName:Tab1SceneName),
-    (text:"CustomFadeTransition",sceneName:FadeSceneName),
-    (text:"Use \"*\" for 404",sceneName:"Unknown")
-]
 struct HomeScene: View {
     @EnvironmentObject private var navigator: Navigator
     var body: some View {
