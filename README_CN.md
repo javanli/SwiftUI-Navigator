@@ -43,6 +43,8 @@ SwiftUI是一个优秀的声明式UI框架，但官方提供的`NavigationView`�
 
 ### CaseStudy
 
+https://user-images.githubusercontent.com/15244665/194570990-041f9ff2-c0ba-438e-b832-24708832ba21.mp4
+
 ## 使用
 
 首先，声明路由。
