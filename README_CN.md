@@ -1,6 +1,5 @@
 # SwiftUINavigator
 
-[![CI](https://github.com/javanli/SwiftUI-Navigator/actions/workflows/ci.yml/badge.svg)](https://github.com/javanli/SwiftUI-Navigator/actions/workflows/ci.yml)
 [![CI](https://img.shields.io/badge/SPM-supported-DE5C43.svg?style=flat)](https://swift.org/package-manager/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
