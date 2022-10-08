@@ -117,17 +117,17 @@ struct NavActionScene: View {
 
 Detail usage -> [Examples](./Examples/)
 
-## 依赖
+## Dependency
 
 * iOS 14.0+ / macOS 12.0+ / tvOS 14.0+ / watchOS 8.0+
 
-## 安装
+## Installation
 
 You can add SwiftUINavigator to an Xcode project by adding it as a package dependency.
 
 > https://github.com/javanli/SwiftUI-Navigator
 
-## 其他
+## Other
 
 Issues and PRs are warmly welcome.
 
